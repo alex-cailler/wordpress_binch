@@ -1,0 +1,10 @@
+.btn-gradient {
+  transition: all ease .5s;
+  background: linear-gradient(to left ,#FDA085, #FDBB00);
+  color: white!important;
+  &:hover {
+    color: white!important;
+    background: linear-gradient(to right ,#FDA085, #FDBB00);
+  }
+}
+.bg-gradient { background: linear-gradient(to right ,#FDA085, #FDBB00); }

@@ -1,0 +1,23 @@
+.card-binch {
+  min-height: 570px;
+  img {
+    height: 220px;
+    width: 220px;
+  }
+  .card-binch__title {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 30px;
+  }
+  .card-binch__text {
+    font-size:  17px;
+    line-height: 1.3em;
+  }
+  &.shadow {
+    box-shadow: 0px 20px 99px rgba(0, 0, 0, 8%);
+  }
+  &.hover:hover {
+    transition: all ease 0.5s;
+    box-shadow: 0px 20px 99px rgba(0, 0, 0, 8%);
+  }
+}

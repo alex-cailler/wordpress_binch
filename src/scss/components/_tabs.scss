@@ -1,0 +1,16 @@
+.tabs-binch {
+  .nav-item {
+    a.nav-link {
+      font-size: 20px !important;
+    }
+  }
+}
+
+.tabs-binch .active {
+  font-size: 20px !important;
+  background: linear-gradient(to left ,#FDA085, #FDBB00) !important;
+  border-radius: 50px !important;
+  padding: 5px 15px !important;
+  font-weight: normal !important;
+  color: white;
+}

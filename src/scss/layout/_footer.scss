@@ -1,0 +1,47 @@
+#footer {
+  background-color: $white;
+  .logo-company {
+    height: 65px;
+    width: 200px;
+  }
+  .footer-widgets {
+    padding-top: 30px;
+  }
+
+  .footer-legal {
+    padding: 20px 0;
+
+    .widgettitle {
+      font-size: 25px!important;
+      font-weight: bold;
+    }
+
+    li {
+      list-style: none;
+    }
+
+    ul {
+      margin: 10px 0 0 0;
+      padding: 0;
+      list-style: none;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+
+      li {
+        padding: 0 0 10px 0;
+
+        a {
+          color: #8C97A1;
+          font-size: 20px;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.icon-binch {
+  height: 50px;
+  width: 50px;
+  border: solid 1px $gray-500;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+  &>i {
+    position: absolute;
+    top: 50%;
+    color: $gray-500;
+    font-size: 25px;
+    transform: translateY(-50%);
+  }
+  &:hover {
+    border-color: $secondary;
+    &>i {
+      color: $secondary
+    }
+  }
+}

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="1747.431" viewBox="0 0 240 1747.431">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #707070;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 3px;
+        stroke-dasharray: 1 15;
+      }
+
+      .cls-2 {
+        fill: #f3f5f8;
+        font-size: 250px;
+        font-family: Montserrat-ExtraBold, Montserrat;
+        font-weight: 800;
+        letter-spacing: -0.02em;
+      }
+    </style>
+  </defs>
+  <g id="line" transform="translate(-820 -2517.842)">
+    <path id="Tracé_2812" data-name="Tracé 2812" class="cls-1" d="M-64.153,9357.948s-100.183,78.8-100.183,257.521S-57.9,9834.69-59.63,10111.555s-93.166,363.407-97.535,611.39,57.992,284.126,72.873,378.613" transform="translate(1044 -6838)"/>
+    <text id="_1" data-name="1" class="cls-2" transform="translate(825 2886)"><tspan x="0" y="0">1</tspan></text>
+    <text id="_2" data-name="2" class="cls-2" transform="translate(910 3515)"><tspan x="0" y="0">2</tspan></text>
+    <text id="_3" data-name="3" class="cls-2" transform="translate(821 4107)"><tspan x="0" y="0">3</tspan></text>
+  </g>
+</svg>
