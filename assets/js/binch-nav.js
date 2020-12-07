@@ -1,7 +1,9 @@
 $(document).ready(function() {
 
     const navEncreEvent = $('#nav-event-position')
-    const header = $('.navbar-binch')
+    const header = $('.header-binch')
+
+    console.log(header)
 
     if (navEncreEvent.length) {
 

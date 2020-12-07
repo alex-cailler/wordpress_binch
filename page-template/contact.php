@@ -15,6 +15,8 @@ get_header(); ?>
 
     <?php get_template_part('template-parts/contact/section', 'form'); ?>
 
+    <?php get_template_part('template-parts/global/section', 'partners'); ?>
+
 </main>
 
 <?php get_footer(); ?>

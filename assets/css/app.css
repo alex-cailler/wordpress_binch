@@ -16715,56 +16715,56 @@ textarea.input-binch {
   width: 90px;
 }
 
-.navbar-binch.variant-transparent {
+.header-binch.variant-transparent {
   background-color: transparent;
 }
 
-.navbar-binch.variant-transparent .nav-link {
+.header-binch.variant-transparent .nav-link {
   color: white !important;
 }
 
-.navbar-binch.variant-transparent .nav-item:last-child {
+.header-binch.variant-transparent .nav-item:last-child {
   background-color: transparent;
   border-radius: 50px;
   border: solid 1px white;
   padding: 4px 10px;
 }
 
-.navbar-binch.variant-transparent .nav-item:last-child a.nav-link {
+.header-binch.variant-transparent .nav-item:last-child a.nav-link {
   color: white !important;
 }
 
-.navbar-binch.variant-transparent .navbar-brand svg .cls-1 {
+.header-binch.variant-transparent .navbar-brand svg .cls-1 {
   fill: #ffffff;
 }
 
-.navbar-binch.variant-transparent .navbar-brand svg .cls-2 {
+.header-binch.variant-transparent .navbar-brand svg .cls-2 {
   fill: #fdbb00;
 }
 
-.navbar-binch.variant-white {
+.header-binch.variant-white {
   background-color: white;
 }
 
-.navbar-binch.variant-white .nav-link {
+.header-binch.variant-white .nav-link {
   color: black !important;
 }
 
-.navbar-binch.variant-white .nav-item:last-child {
+.header-binch.variant-white .nav-item:last-child {
   background-color: #fdbb00;
   border-radius: 50px;
   padding: 4px 10px;
 }
 
-.navbar-binch.variant-white .nav-item:last-child a.nav-link {
+.header-binch.variant-white .nav-item:last-child a.nav-link {
   color: white !important;
 }
 
-.navbar-binch.variant-white .navbar-brand svg .cls-1 {
+.header-binch.variant-white .navbar-brand svg .cls-1 {
   fill: #000000;
 }
 
-.navbar-binch.variant-white .navbar-brand svg .cls-2 {
+.header-binch.variant-white .navbar-brand svg .cls-2 {
   fill: #fdbb00;
 }
 

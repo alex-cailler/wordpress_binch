@@ -35,8 +35,10 @@
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="d-flex justify-content-center">
-                                <img src="<?= get_sub_field('image')['url'] ?>"
-                                     class="img-fluid"/>
+                                <div style="max-width: 350px">
+                                    <img src="<?= get_sub_field('image')['url'] ?>"
+                                         class="img-fluid"/>
+                                </div>
                             </div>
                         </div>
                         <div class="col-lg-6 d-flex mt-5 mt-lg-0 align-items-center">

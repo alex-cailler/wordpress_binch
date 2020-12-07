@@ -10,7 +10,9 @@
                 </a>
             </div>
             <div class="col-lg-6 justify-content-center d-flex mt-5 mt-lg-0">
-                <img src="<?= get_field('_presentation_image')['url'] ?>" alt="image" class="img-fluid">
+                <div style="max-width: 350px">
+                    <img src="<?= get_field('_presentation_image')['url'] ?>" alt="image" class="img-fluid">
+                </div>
             </div>
         </div>
     </div>

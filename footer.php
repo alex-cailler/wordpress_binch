@@ -30,10 +30,10 @@
     </div>
 </footer>
 
-<script type="text/javascript"> window.$crisp=[];window.CRISP_WEBSITE_ID="897eb3fb-c158-4797-9ce3-a4e32599a71e";(function(){ d=document;s=d.createElement("script"); s.src="https://client.crisp.chat/l.js"; s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})(); </script>
-<script type="text/javascript" src="<?= get_template_directory_uri() ?>/assets/js/binch-nav.js"></script>
 
 <?php wp_footer(); ?>
+<script type="text/javascript" src="<?= get_template_directory_uri() ?>/assets/js/binch-nav.js"></script>
+<script type="text/javascript"> window.$crisp=[];window.CRISP_WEBSITE_ID="897eb3fb-c158-4797-9ce3-a4e32599a71e";(function(){ d=document;s=d.createElement("script"); s.src="https://client.crisp.chat/l.js"; s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})(); </script>
 
 </body>
 </html>
