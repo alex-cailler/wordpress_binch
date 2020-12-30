@@ -954,7 +954,7 @@
             {
                 "param": "page",
                 "operator": "==",
-                "value": "5"
+                "value": "19"
             }
         ]
     ],
@@ -966,13 +966,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "acfe_display_title": "",
-    "acfe_autosync": [
-        "json"
-    ],
-    "acfe_permissions": "",
-    "acfe_form": 0,
-    "acfe_meta": "",
-    "acfe_note": "",
-    "modified": 1606992097
+    "modified": 1607943404
 }

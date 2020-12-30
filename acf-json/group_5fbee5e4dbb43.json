@@ -28,7 +28,7 @@
             {
                 "param": "options_page",
                 "operator": "==",
-                "value": "api"
+                "value": "acf-options-api"
             }
         ]
     ],
@@ -40,13 +40,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "acfe_display_title": "",
-    "acfe_autosync": [
-        "json"
-    ],
-    "acfe_permissions": "",
-    "acfe_form": 0,
-    "acfe_meta": "",
-    "acfe_note": "",
-    "modified": 1606346879
+    "modified": 1607960739
 }

@@ -14,7 +14,8 @@
 
      get_template_part('inc/theme', 'comment');
 
-     get_template_part('inc/theme', 'taxonomies');
+     get_template_part('inc/theme', 'headers');
 
-     get_template_part('inc/theme', 'media');
+     get_template_part('inc/theme', 'helpers');
+
 

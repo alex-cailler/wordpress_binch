@@ -1,0 +1,25 @@
+.first-article {
+  height: 428px;
+  h2 {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  img {
+    max-height: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .first-article {
+    height: initial;
+    h2 {
+      text-overflow: initial;
+      white-space: initial;
+      overflow: initial;
+    }
+    img {
+      max-height: 328px;
+    }
+  }
+}

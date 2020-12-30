@@ -1,32 +1,6 @@
-$(document).ready(function() {
+window.addEventListener('scroll', function () {
+    const header = document.querySelector('.header-binch');
+    const windowPosition = window.scrollY > 0;
 
-    const navEncreEvent = $('#nav-event-position')
-    const header = $('.header-binch')
-
-    console.log(header)
-
-    if (navEncreEvent.length) {
-
-        setNavBackground(header, navEncreEvent)
-
-        $(document).scroll(function() {
-            setNavBackground(header, navEncreEvent)
-        })
-
-        return;
-    }
-
-    header.removeClass('variant-transparent').addClass('variant-white')
-
+    header.classList.toggle('scrollingActive', windowPosition);
 })
-
-function setNavBackground (header, navEncreEvent) {
-
-    if (header.offset().top > (navEncreEvent.position().top - header.height())) {
-        header.removeClass('variant-transparent').addClass('variant-white')
-    }
-    else {
-        header.removeClass('variant-white').addClass('variant-transparent')
-    }
-
-}

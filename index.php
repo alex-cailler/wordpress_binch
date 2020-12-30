@@ -15,14 +15,15 @@
 
                             <?php if ($i == 0): ?>
                                 <div class="col-12 mb-7">
-                                    <div class="d-lg-flex rounded shadow overflow-hidden">
-                                        <div class="w-100">
+                                    <div class="d-lg-flex rounded shadow overflow-hidden first-article" >
+                                        <div class="h-100" style="flex: 1">
                                             <?php the_post_thumbnail('large', [
                                                 'class' => 'img-fluid w-100',
-                                                'style' => 'max-height: 380px; object-fit: cover; object-position: top;'
+                                                'style' => 'object-fit: cover; object-position: top;',
+                                                'alt'   => 'binch - bar, article pour le blog'
                                             ]); ?>
                                         </div>
-                                        <div class="w-100 px-5 px-md-6 pt-5 pb-6">
+                                        <div class="w-100 px-5 px-md-6 pt-5 pb-6" style="flex: 1; min-width: 0">
                                             <h2 class="text-size-35 text-primary font-weight-bold">
                                                 <?php the_title() ?>
                                             </h2>
@@ -30,7 +31,7 @@
                                                 <?php the_excerpt(); ?>
                                             </p>
                                             <p class="text-size-20 text-gray">
-                                                <?php _e(date( 'j F Y', strtotime($post->post_date) )) ?>
+                                                <?php _e(date( 'j F Y', strtotime($post->post_date) ), 'binch') ?>
                                             </p>
                                             <div class="pt-5 flex-shrink-1">
                                                 <a href="<?php the_permalink(); ?>" class="btn-gradient rounded-pill text-size-20 font-weight-bold px-4 py-2 px-md-6 py-md-2">Lire l'article</a>
@@ -43,7 +44,8 @@
                                     <div class="shadow rounded-lg overflow-hidden" style="min-height: 550px">
                                         <?php the_post_thumbnail('large', [
                                                 'class' => 'img-fluid w-100',
-                                                'style' => 'max-height: 250px; object-fit: cover; object-position: top;'
+                                                'style' => 'max-height: 250px; object-fit: cover; object-position: top;',
+                                                'alt'   => 'binch - bar, article pour le blog'
                                         ]); ?>
                                         <div class="px-5 pb-6 pt-5">
                                             <h2 class="text-size-25 font-weight-bold text-primary">

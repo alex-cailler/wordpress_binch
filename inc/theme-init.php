@@ -5,7 +5,7 @@ function binch_theme_init()
 
     add_theme_support('title-tag');
 
-    add_theme_support('curstom-logo');
+    add_theme_support('custom-logo');
 
     add_theme_support('post-thumbnails');
 

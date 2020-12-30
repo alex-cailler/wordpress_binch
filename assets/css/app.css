@@ -16622,8 +16622,16 @@ a.text-darker:focus {
   margin: auto;
 }
 
+.step {
+  display: none;
+}
+
+.step.active-step {
+  display: block;
+}
+
 .card-binch {
-  min-height: 570px;
+  min-height: 500px;
 }
 
 .card-binch img {
@@ -16662,7 +16670,8 @@ a.text-darker:focus {
   font-weight: 400;
   line-height: 30px;
   height: 70px;
-  padding: 30px;
+  padding: 10px 30px;
+  margin: 10px 0px;
   box-shadow: none;
   transition: all 0.5s;
 }
@@ -16678,10 +16687,42 @@ textarea.input-binch {
 }
 
 .btn-outline-binch {
+  -webkit-animation: fadeInDown 0.5s both 0.5s;
+          animation: fadeInDown 0.5s both 0.5s;
   color: #fdbb00 !important;
-  border: solid 4px #fdbb00;
+  border: solid 2px #fdbb00;
   background: transparent;
   font-weight: 700;
+}
+
+.btn-outline-binch:hover {
+  background-color: #fdbb00;
+  color: white !important;
+  box-shadow: 0px 20px 30px 0px rgba(253, 187, 0, 0.3) !important;
+}
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .icon-binch {
@@ -16711,61 +16752,78 @@ textarea.input-binch {
   color: #fdbb00;
 }
 
-.navbar-binch .navbar-brand svg {
-  width: 90px;
+.navbar-binch .navbar-brand svg,
+.navbar-binch .navbar-brand img {
+  width: 90px !important;
 }
 
-.header-binch.variant-transparent {
+.header-binch .nav-item {
+  position: relative;
+}
+
+.header-binch .current-menu-item > a:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 50px;
+  height: 2px;
+  border-radius: 4px;
+}
+
+.header-binch {
+  transition: background-color 0.5s ease;
   background-color: transparent;
 }
 
-.header-binch.variant-transparent .nav-link {
+.header-binch nav {
+  transition: height 0.5s ease;
+  height: 6rem !important;
+}
+
+.header-binch .nav-link {
   color: white !important;
 }
 
-.header-binch.variant-transparent .nav-item:last-child {
+.header-binch .nav-item:last-child {
   background-color: transparent;
   border-radius: 50px;
   border: solid 1px white;
   padding: 4px 10px;
 }
 
-.header-binch.variant-transparent .nav-item:last-child a.nav-link {
+.header-binch .nav-item:last-child a.nav-link {
   color: white !important;
 }
 
-.header-binch.variant-transparent .navbar-brand svg .cls-1 {
-  fill: #ffffff;
-}
-
-.header-binch.variant-transparent .navbar-brand svg .cls-2 {
-  fill: #fdbb00;
-}
-
-.header-binch.variant-white {
+.header-binch .current-menu-item > a:before {
   background-color: white;
 }
 
-.header-binch.variant-white .nav-link {
+.header-binch.scrollingActive {
+  background-color: white;
+  box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.1);
+}
+
+.header-binch.scrollingActive nav {
+  height: 4.6rem !important;
+}
+
+.header-binch.scrollingActive .nav-link {
   color: black !important;
 }
 
-.header-binch.variant-white .nav-item:last-child {
+.header-binch.scrollingActive .nav-item:last-child {
   background-color: #fdbb00;
   border-radius: 50px;
   padding: 4px 10px;
 }
 
-.header-binch.variant-white .nav-item:last-child a.nav-link {
+.header-binch.scrollingActive .nav-item:last-child a.nav-link {
   color: white !important;
 }
 
-.header-binch.variant-white .navbar-brand svg .cls-1 {
-  fill: #000000;
-}
-
-.header-binch.variant-white .navbar-brand svg .cls-2 {
-  fill: #fdbb00;
+.header-binch.scrollingActive .current-menu-item > a:before {
+  background-color: #fdbb00;
 }
 
 .navbar-nav {
@@ -16787,6 +16845,44 @@ textarea.input-binch {
   padding: 5px 15px !important;
   font-weight: normal !important;
   color: white;
+}
+
+.first-article {
+  height: 428px;
+}
+
+.first-article h2 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.first-article img {
+  max-height: 100%;
+}
+
+@media (max-width: 992px) {
+  .first-article {
+    height: initial;
+  }
+
+  .first-article h2 {
+    text-overflow: initial;
+    white-space: initial;
+    overflow: initial;
+  }
+
+  .first-article img {
+    max-height: 328px;
+  }
+}
+
+.checkbox-services-type .checkbox-item {
+  border: solid 1px transparent;
+}
+
+.checkbox-services-type input:checked ~ .checkbox-item {
+  box-shadow: 0 0 0 0.25rem rgba(253, 187, 0, 0.25);
 }
 
 .btn-gradient {
@@ -16828,12 +16924,20 @@ textarea.input-binch {
   font-size: 25px !important;
 }
 
+.text-size-22 {
+  font-size: 22px !important;
+}
+
 .text-size-20 {
   font-size: 20px !important;
 }
 
 .text-size-15 {
   font-size: 15px !important;
+}
+
+.text-size-10 {
+  font-size: 10px !important;
 }
 
 .font-weight-300 {

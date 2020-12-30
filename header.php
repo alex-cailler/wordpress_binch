@@ -1,16 +1,13 @@
 <!doctype html>
-<html <?php language_attributes(); ?>>
+<html class="no-js" <?php language_attributes(); ?>>
 <head>
     <title><?= the_title() ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
                 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
             j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','<?= get_field('google_tag_manager_key', 'apis') ?>');</script>
+        })(window,document,'script','dataLayer','<?= get_field('google_tag_manager_key', 'option') ?>');</script>
 
     <?php wp_head(); ?>
 
@@ -27,9 +24,8 @@
 <header id="header" class="fixed-top header-binch">
 
     <nav class="navbar navbar-binch container-binch navbar-expand-md" role="navigation">
-        <a class="navbar-brand" href="/">
-            <?= file_get_contents( get_template_directory_uri() . "/assets/svg/binch_noir_jaune.svg") ?>
-        </a>
+
+        <?php get_template_part('template-parts/headers/logo'); ?>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"
                 aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,18 +33,16 @@
         </button>
 
         <?php
-
-
-        wp_nav_menu(array(
-            'theme_location' => 'primary',
-            'depth' => 2,
-            'container' => 'div',
-            'container_class' => 'collapse navbar-collapse',
-            'container_id' => 'navbar',
-            'menu_class' => 'nav navbar-nav ml-auto',
-            'fallback_cb' => 'WP_Bootstrap_Navwalker::fallback',
-            'walker' => new WP_Bootstrap_Navwalker()
-        ));
+            wp_nav_menu(array(
+                'theme_location' => 'primary',
+                'depth' => 2,
+                'container' => 'div',
+                'container_class' => 'collapse navbar-collapse',
+                'container_id' => 'navbar',
+                'menu_class' => 'nav navbar-nav ml-auto',
+                'fallback_cb' => 'WP_Bootstrap_Navwalker::fallback',
+                'walker' => new WP_Bootstrap_Navwalker()
+            ));
         ?>
     </nav>
 

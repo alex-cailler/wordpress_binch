@@ -2,7 +2,9 @@
     <div class="container-binch">
         <div class="row align-items-center">
             <div class="col-lg-6">
-                <img src="<?= get_field('_stockage_image')['url'] ?>" class="img-fluid" alt="image">
+                <?php if ($img = get_field('_stockage_image')): ?>
+                    <?= wp_get_attachment_image($img['id'], 'small', false, ['alt' => 'binch - registre image']); ?>
+                <?php endif; ?>
             </div>
             <div class="col-lg-6 pl-lg-5 pr-lg-7 mt-5 mt-lg-0">
                 <h1 class="font-weight-bold mb-4"><?= get_field('_stockage_title') ?></h1>
